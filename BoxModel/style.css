@@ -1,0 +1,17 @@
+.txt{
+background: white;
+color: green;
+border: 50px solid green;
+padding: 30px;
+margin: 100px;
+text-align: center;
+/* padding : trên-phải-dưới-trái ; tương tự như margin */
+}
+h1 {
+    margin: 55px;
+padding: 55px;   
+ width: 250px;
+    height: 100px;
+    background: rgb(201, 200, 200);
+
+}
