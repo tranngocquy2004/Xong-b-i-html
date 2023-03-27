@@ -1,4 +1,4 @@
-.txt{
+div{
 background: white;
 color: green;
 border: 50px solid green;
@@ -6,6 +6,9 @@ padding: 30px;
 margin: 100px;
 text-align: center;
 /* padding : trên-phải-dưới-trái ; tương tự như margin */
+/*Padding – khoảng cách giữa nội dung và đường viền (border). Padding là trong suốt. */
+/*Content – nội dung của hộp, nơi xuất hiện văn bản và hình ảnh. */
+/*Margin – không gian bên ngoài border (khoảng cách giữa border và các thành phần khác bên ngoài. Margin là trong suốt. */
 }
 h1 {
     margin: 55px;

@@ -1,16 +1,37 @@
-input {
+div{
+    padding: 20px;
+
+}
+.x{
+    height: 300px;
     width: 300px;
-}
-h1
-{
-    font-size: 30;
-}
-button{
-    color: yellow;
-    background-color: pink;
+    border:5px solid yellow ;
+    border-radius: 50%;  
+    padding: 30px;
     
-}
-table
+    /*padding : trên-phải-dưới-trái ; tương tự như margin */
+    /*Padding – khoảng cách giữa nội dung và đường viền (border). Padding là trong suốt. */
+    /*Content – nội dung của hộp, nơi xuất hiện văn bản và hình ảnh. */
+    /*Margin – không gian bên ngoài border (khoảng cách giữa border và các thành phần khác bên ngoài. Margin là trong suốt. */
+    }
+ .txt
 {
-    background-color: aquamarine;
+    width: 50px;
+    height: 50px;
 }
+table{
+    height: 50px;
+    width: 150px;
+    width: 50%;
+    border-collapse: collapse;
+    background-color: yellow;
+    border: rgb(12, 0, 0);
+}
+    th
+    {
+        font-size:20px
+    }
+    td{
+        font-size: 25px;
+        text-align: center;
+    }
