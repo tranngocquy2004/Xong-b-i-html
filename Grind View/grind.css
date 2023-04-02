@@ -12,6 +12,7 @@
 .col-12 {width: 100%;}
 [class*="col-"] {
     float: left;
+    padding: 15px;
     border: 1px solid red;
     box-sizing: border-box;
 }
@@ -21,7 +22,10 @@
     display: table;
 }
 .box img{
-    height: 100%;
+    width: 100%;
+}
+.box:hover{
+    scale: 1.2;
 }
 .box p{
     text-align: center;

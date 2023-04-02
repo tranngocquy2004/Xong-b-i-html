@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p {
+            color: red;
+        }
+        div>p {
+            font-style: italic;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+        .out{
+            border: 1px solid;
+            height: 200px;
+        }
+        .out:hover .box{
+            border-radius: 50%; ;
+            background: yellow;
+            transition: 3s;
+            transform: rotate(180deg);
+            scale: 1.5;
+            margin-left: 200px;
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+        .box2:hover{
+            width: 0px;
+        }
+        .animation{
+            width: 200px;
+            height: 200px;
+            background: blue;
+            animation: quy 5s;
+        }
+        .animation:hover{
+margin-left: 800px;
+transform:rotate(180deg) ;
+transition: 3s;
+
+        }
+        @keyframes quy {
+            0% {background: red;border-radius: 0;}
+            50% {background: blue;margin-left: 87%;border-radius: 50%;}
+            100% {background: violet;border-radius: 0;} 
+        }
+    </style>
+</head>
+<body>
+    <!-- transition là thời gian diễn ra của div ( 1 khối) trong hover -->
+    <!-- scale dùng để thay đổi kích cỡ ban đầu -->
+    <div>
+        <p>A</p>
+        <p>B</p>
+        <h1>
+            <p>C</p>
+        </h1>
+    </div>
+    <!-- dấu phẩy , dấu cách , dấu >  -->
+    <div class="out">
+    <div class="box">
+    </div>
+</div>
+    <div class="box2"></div>
+    <!-- @keyframe là -->
+    <!-- scale: Tăng dần kích cỡ -->
+    <div class="animation"></div>
+</body>
+</html>

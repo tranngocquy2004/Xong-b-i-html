@@ -1,112 +1,124 @@
-
-.head_logo , .head_banner{
-    margin:  4px;
-}
-.head_logo{
-    width: 29%;
-    height: 150px;
-    border: 1px solid;
-    float: left;
-}
-.head_banner{
-    width: 69%;
-    height: 150px;
-    border: 1px solid;
-    float: left;
-}
-
-.q{
+.head, .menu, .main, .footer {
+    margin-bottom: 10px;
     width: 100%;
+    border: 1px solid;
+}
+.head {
+    height: 150px;
+    border: 0;
+}
+.head_logo {
+    width: 30%;
+    margin-right: 10px;
+    height: 150px;
+    border: 1px solid;
+    float: left;
+}
+.head_banner {
+    width: calc(100% - 30% - 14px);
+    height: 150px;
+    border: 1px solid;
+    float: left;
+}
+.menu {
     height: 50px;
-    float: left;
-    border: 1px solid;
-    margin-bottom:  8px;
-
 }
-.w{
-    height: 550px;
-    width: 100%;
-
-}
-.left{
-    width: 15%;
+.main {
     height: 600px;
-    border: 1px solid;
-    float: left;
+    border: 0;
 }
-.top{
+
+.main_left {
+    width: 15%;
+    float: left;
+    height: 600px;
+    margin-right: 10px;
+}
+
+.main_left_top {
     width: 100%;
     height: 200px;
-    margin: 6px;
-    margin-top: 6px;
-
-
+    border: 1px solid;
 }
-.bot{
+
+.main_left_bot {
     width: 100%;
     height: 300px;
     border: 1px solid;
     margin-top: 10px;
-
 }
-.t , .p {
-    margin-bottom:  8px;
 
-}
-.t{
-    width: 450px;
-    height: 30%;
-    border: 1px solid;
-    margin-left: 10px;
+.main_mid {
+    width: calc(100% - 15% - 25% - 26px);
     float: left;
-
-}
-.p{
-    width: 450px;
-    height: 30%;
-    border: 1px solid;
-    margin-left: 10px;
-    float: left;
-
-}
-.t1 , .t2 , .t3{
-    margin-bottom:  8px;
-
-}
-.t1 , .t2 , .t3{
-    width: 296px;
-    height: 30%;
-    border: 1px solid;
-    margin-left: 10px;
-    float: left;
-
-
-}
-.t4 , .t5 , .t6{
-    width: 296px;
-    height: 30%;
-    border: 1px solid;
-    margin-left: 10px;
-    float: left;
-
-}
-
-   .right {
-    width: calc(100% - 15% - 25% - 6px);
     height: 600px;
+    margin-right: 10px;
+}
+.main_mid_top {
+    width: 100%;
+    height: 150px;
+}
+.news {
+    width: calc(50% - 12px);
+    height: 150px;
+    margin: 5px;
     border: 1px solid;
     float: left;
-
-
-   }
-   .end{
+}
+.main_mid_bot {
+    width: 100%;
+    height: 310px;
+    margin-top: 10px;
+}
+.item {
+    width: calc(33.3% - 12px);
+    height: 150px;
+    margin: 5px;
+    border: 1px solid;
+    float: left;
+}
+.main_right {
     width: 25%;
+    float: left;
     height: 600px;
     border: 1px solid;
-    float: left;
-
-   }
-.e{
-    height: 50px;
-
 }
+.footer {
+    height: 50px;
+}
+/* float: 2 div trên 1 hàng => tổng width < 100% */
+/* 100%+1px>100% */
+@media only screen and (max-width: 1200px) {
+.main_left {
+    display: none;
+}
+.main_mid {
+    width: 64%;
+}
+.main_right{
+    width: 35%;
+}
+}
+@media only screen and (max-width: 1000px) {
+    .main_left {
+        display: none;
+    }
+    .main_mid {
+        width: 100%;
+    }
+
+    }
+
+    @media only screen and (max-width: 800px) {
+        .item {
+            width: calc(50% - 12px)
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        .item {
+            width: calc(100% - 12px);
+        }
+        .main {
+            overflow: auto;
+        }
+    }
