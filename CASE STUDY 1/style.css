@@ -285,6 +285,11 @@ nav ul li a{
     padding: 100px 0 20px;
     background: #efefef;
     position: relative;
+    background: linear-gradient(rgba(241, 238, 238, 0.5),#dde6e5) , url("h4.jpg");
+   
+    background-size: cover;
+    background-position: center;
+    height: 100vh
 }
 .footer-row{
     width: 80%;
@@ -308,13 +313,12 @@ nav ul li a{
     line-height: 35px;
 }
 .footer-img{
-    max-width: 170px;
+    max-width: 370px;
     opacity: 0.1;
     position: absolute;
     left: 50%;
     top: 35%;
     transform: translate(-50%,-50%);
-    background: linear-gradient(rgba(0,0,0,0.5),#009688) , url("h4.jpg");
 }
 .social-link{
     text-align: center;

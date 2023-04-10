@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 
 </head>
 <body>
@@ -30,11 +31,11 @@
     <section id="sideNav">
         <nav>
             <ul>
-                <li><a href="#">Home</a> </li>
-                <li><a href="#">Features</a> </li>
-                <li><a href="#">Services</a> </li>
-                <li><a href="#">Testimonial</a> </li>
-                <li><a href="#">Meeet Us</a> </li>
+                <li><a href="#banner">Home</a> </li>
+                <li><a href="#feature">Features</a> </li>
+                <li><a href="#service">Services</a> </li>
+                <li><a href="#testimonial">Testimonial</a> </li>
+                <li><a href="#footer">Meeet Us</a> </li>
             </ul>
         </nav>
     </section>
@@ -82,7 +83,7 @@
         </div>
     </section>
     <section id="service">
-        <div class="title-text">
+        <div class="tittle-text">
             <p>SERVICES</p>
             <h1>We Provider Better</h1>
         </div>
@@ -127,7 +128,7 @@
         </div>
     </section>
     <section id="testimonial">
-        <div class="title-text">
+        <div class="tittle-text">
             <p>Testimonial</p>
             <h1>What Client Says</h1>
         </div>
@@ -164,8 +165,8 @@
         </div>
     </section>
     <section id="footer">
-        <img src="h4.jpg">
-        <div class="title-text">
+        
+        <div class="tittle-text">
             <p>CONTACT</p>
             <h1>Visit Shop Today</h1>
         </div>
@@ -204,7 +205,11 @@
                 menu.src = "menu.png";
             }
         }
-
+// All animations will take exactly 100ms
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 500,
+	speedAsDuration: true
+});
     </script>
 </body>
 </html>
