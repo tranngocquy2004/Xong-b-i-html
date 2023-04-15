@@ -1,62 +1,24 @@
-.head , .nav , .section , .artical , .foot{
+.all{
+    width: 510px;
+    height: 300px;
+    border: 1px solid lightsalmon;
     margin: 5px;
-   
+    background:  rgb(243, 139, 98);
 }
-.box{
-    width: 170px;
-    height:350px ;
-    border: 1px solid black;
-    
-   
-}
-
-.section{
-    width: 100px;
-    height: 50px;
-    float: left;
-    border: 1px solid black;
-    text-align: center;
-    background: orange;}
-
 .head{
-    width: 150px;
-    height: 20px;
-    border: 1px solid black;
-    background: pink;
-    text-align: center;
-}
-.nav{
-    width: 150px;
-    height: 20px;
-    border: 1px solid black;
-    text-align: center;
-    background: olive;
-}
-
-    
-
-.artical{
-    width: 100px;
-    height: 50px;
-    float: left;
-    border: 1px solid black;
-    text-align: center;
-    background: yellow;
-}
-.aside{
-    width: 50px;
-    height: 100px;
-    float: left;
-    border: 1px solid black;
-    text-align: center;
-    margin: 5px ;
+    width: 500px;
+    height: 35px;
+    border: 1px solid rgb(213, 213, 223);
+    text-transform:unset;
+    background:rgb(213, 213, 223) ;
     
     
 }
-.foot{
-    width: 150px;
-    height: 20px;
-    border: 1px solid black;
-    text-align: center;
-    clear: both;
+.head h2{
+    color: blue;
+    margin: 4px;
+}
+.body p{
+    margin: 4px;
+    color: blue;
 }
